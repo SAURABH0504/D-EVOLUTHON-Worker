@@ -6,6 +6,7 @@ import 'package:splashscreen/splashscreen.dart';
 import 'Screen/HomeScreen.dart';
 import 'Screen/LoginSignUp.dart';
 import 'Screen/ProfileScreen.dart';
+import 'Screen/WorklistScreen.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -13,6 +14,7 @@ void main() {
           '/HomeScreen': (context) => HomeScreen(),
           '/LoginSignUp': (context) => LoginSignUp(),
           '/ProfileScreen': (context) => ProfileScreen(),
+          '/WorklistScreen':(context) => WorklistScreen(),
         },
       debugShowCheckedModeBanner: false,
 home:
