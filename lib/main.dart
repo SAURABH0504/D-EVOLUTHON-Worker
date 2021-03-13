@@ -3,13 +3,22 @@ import 'package:flutter/material.dart';
 import 'package:freelance_worker/Service/AuthService.dart';
 import 'package:splashscreen/splashscreen.dart';
 
+import 'Screen/HomeScreen.dart';
+import 'Screen/LoginSignUp.dart';
+import 'Screen/ProfileScreen.dart';
+
 void main() {
   runApp(new MaterialApp(
       routes: {
-
-      },
-      debugShowCheckedModeBanner: false,home:
-  MyApp()));
+          '/HomeScreen': (context) => HomeScreen(),
+          '/LoginSignUp': (context) => LoginSignUp(),
+          '/ProfileScreen': (context) => ProfileScreen(),
+        },
+      debugShowCheckedModeBanner: false,
+home:
+  MyApp(),
+),
+);
 }
 class MyApp extends StatefulWidget {
   @override

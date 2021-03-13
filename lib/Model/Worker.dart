@@ -8,6 +8,8 @@ class Worker extends UserDetails{
   UserAddress address;
   List<Review> reviews;
 
+  Worker({this.address,this.rating,this.reviews,this.work});
+
   Map<String,dynamic> toMap(){
     return {
       'work':Work.ConvertCustomStepsToMap(work),
